@@ -152,7 +152,7 @@ const availableYears = computed(() => {
 });
 
 // Dapatkan API Key dari variabel lingkungan
-//const apiKey = import.meta.env.VITE_API_KEY;
+const apiKey = import.meta.env.VITE_API_KEY;
 // --- Fungsi Pengambilan Data ---
 const fetchData = async () => {
   try {
