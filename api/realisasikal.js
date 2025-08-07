@@ -3,7 +3,7 @@ const oracledb = require('oracledb');
 // Setel mode thin client
 oracledb.initOracleClient({ libDir: '' });
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
     // Ambil parameter dan autentikasi
     const { tahun, tglawal, tglakhir } = req.query;
     const clientApiKey = req.headers['x-api-key'];
