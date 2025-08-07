@@ -152,7 +152,7 @@ const availableYears = computed(() => {
 });
 
 // Dapatkan API Key dari variabel lingkungan
-const apiKey = import.meta.env.VITE_API_KEY;
+//const apiKey = import.meta.env.VITE_API_KEY;
 // --- Fungsi Pengambilan Data ---
 const fetchData = async () => {
   try {
@@ -167,7 +167,7 @@ const fetchData = async () => {
     const formattedTglAwal = formatDateToDDMMYYYY(tanggalAwal.value);
         const formattedTglAkhir = formatDateToDDMMYYYY(tanggalAkhir.value);
 
-    const realisasiResponse = await axios.get('http://192.168.4.7:6600/api/realisasikal', {
+    const realisasiResponse = await axios.get('/api/realisasikal', {
       params: {
         tahun: selectedTahun.value,
        // tglawal: tanggalAwal.value,
